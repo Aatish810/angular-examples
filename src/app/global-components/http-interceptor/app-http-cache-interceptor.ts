@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpResponse } from '@angular/common/http';
-import { HttpCache } from './app-http-cache';
-
+import { HttpCache  } from './app-http-cache';
+import 'rxjs/add/observable/empty';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/observable/concat';
 @Injectable()
 export class CachingInterceptor implements HttpInterceptor {
     constructor(private cache: HttpCache) { }

@@ -1,0 +1,10 @@
+<table style="width:100%">
+    <tr *ngFor="let data of tabelData">
+      <th><input type="checkbox" [checked]="data.isChecked" (click)= "chnageStateFun(data)"/></th>
+        <th>{{data.name}}</th>
+        <th>{{data.lastName}}</th> 
+        <th>{{data.Id}}</th>
+      </tr>
+
+      <button (click)="submitData()">Submit Data</button>
+</table>

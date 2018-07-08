@@ -8,10 +8,12 @@ import { HTTPCommonService } from './global-components/http-interceptor/app-http
 import { GlobalErrorHandler, GlobalHTTPErrorHanlder } from './global-components/global-error-handler/global-error-handler';
 import { AuthService } from './global-components/http-interceptor/auth.service';
 import { AppComponent } from './app.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

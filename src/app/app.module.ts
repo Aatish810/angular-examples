@@ -9,11 +9,13 @@ import { GlobalErrorHandler, GlobalHTTPErrorHanlder } from './global-components/
 import { AuthService } from './global-components/http-interceptor/auth.service';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
+import { ZipComponent } from './zip/zip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    ZipComponent
   ],
   imports: [
     BrowserModule,

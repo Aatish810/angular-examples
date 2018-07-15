@@ -12,6 +12,10 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "jszip": ["./node_modules/jszip/dist/jszip.min.js",
+        "./node_modules/file-saver/FileSaver.min.js"]
+    },
     "lib": [
       "es2017",
       "dom"

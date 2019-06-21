@@ -79,6 +79,12 @@ export class GlobalHTTPErrorHanlder {
         const obj = { message: err['statusText'] };
         return throwError(obj);
         // return throwError(new InternalServerError(error));
+      } else if (error.status === 503) {
+        // console.log('Internal server error');
+        // return Observable.throw(new InternalServerError(error));
+        const obj = { message: 'Service Unavailable'};
+        return throwError(obj);
+        // return throwError(new InternalServerError(error));
       } else {
         // console.log('App error');
         // return Observable.throw(new AppError(error));
